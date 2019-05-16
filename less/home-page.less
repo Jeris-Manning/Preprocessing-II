@@ -1,13 +1,25 @@
 .home {
+  background-color: @main-bg;
+
+  header {
+    .DashBorder;
+    .MarginL;
+    .MarginR;
+    // height: 400px;
+    width: 80%;
+    img {
+      margin-bottom: 20px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    .MarginL;
+    width: 80%;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -39,23 +51,42 @@
   }
 
   .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+    // width: (75% * .8);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: content;
+    padding: 0 10%;
+    // margin: 0 12.5%;
+    // margin: 0 auto 30px;
+    .DashBorder;
+    .MarginL;
+    
 
     img {
       border-radius: 10px;
+      margin-bottom: 30px;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    .SectionWidth;
+    // .PaddingLR;
+    // .DashBorder;
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto;
 
     .destination {
       width: 30%;
+      // margin-left: 3%;
       margin-bottom: 30px;
+      padding-right: 4%;
     }
   }
-}// home
+  .btn {
+    .SignUpButton(45px, 15px, @button-bg, @white, 1.9rem);
+  }
+} // home
