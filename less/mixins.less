@@ -4,11 +4,11 @@
 }
 
 .MarginL {
-  margin-left: 100px;
+  margin-left: 10%;
 }
 
 .MarginR {
-  margin-right: 100px;
+  margin-right: 10%;
 }
 
 .PaddingLR {
@@ -19,15 +19,11 @@
   width: @contentWidth;
 }
 
-.SignUpButton(@btnHeight, @radius, @bgColor, @textColor, @textSize) {
+.CustomButton(@btnHeight, @radius, @bgColor, @textColor, @textSize) {
   background: @bgColor;
   height: @btnHeight;
   border-radius: @radius;
   color: @textColor;
   font-size: @textSize;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 95%;
-  letter-spacing: 0;
+  
 }
