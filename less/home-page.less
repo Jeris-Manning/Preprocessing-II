@@ -119,12 +119,16 @@
       }
     }
   }
-  .btn {
+  .btn, .btn:focus {
     .CustomButton(45px, 15px, @button-bg, @white, 1.9rem);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 90%;
     letter-spacing: 0;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
   }
 } // home

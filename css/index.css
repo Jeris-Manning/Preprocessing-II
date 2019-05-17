@@ -347,7 +347,8 @@ nav .navLinks a {
     width: 100%;
   }
 }
-.home .btn {
+.home .btn,
+.home .btn:focus {
   background: #259c92;
   height: 45px;
   border-radius: 15px;
@@ -358,4 +359,8 @@ nav .navLinks a {
   align-items: center;
   width: 90%;
   letter-spacing: 0;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px black;
+  cursor: pointer;
 }
