@@ -1,1 +1,29 @@
 // Mixins in here
+.DashBorder {
+  border-bottom : dashed @silver 2px;
+}
+
+.MarginL {
+  margin-left: 10%;
+}
+
+.MarginR {
+  margin-right: 10%;
+}
+
+.PaddingLR {
+  padding: 0 100px;
+}
+
+.SectionWidth {
+  width: @contentWidth;
+}
+
+.CustomButton(@btnHeight, @radius, @bgColor, @textColor, @textSize) {
+  background: @bgColor;
+  height: @btnHeight;
+  border-radius: @radius;
+  color: @textColor;
+  font-size: @textSize;
+  
+}

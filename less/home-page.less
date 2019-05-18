@@ -1,31 +1,68 @@
 .home {
+  background-color: @main-bg;
+
+  header {
+    .DashBorder;
+    .MarginL;
+    .MarginR;
+    // height: 400px;
+    width: 80%;
+    img {
+      margin-bottom: 20px;
+    }
+    @media @media700 {
+      margin: 0 5%;
+      width: 90%;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
-   
+    .MarginL;
+    width: 80%;
     
+    @media @media700 {
+      flex-direction: column;
+      align-content: center;
+      width: 90%;
+      margin: 30px 5%;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      
+      @media @media700 {
+        width: 100%;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      
+      @media @media700 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
 
       img {
         border-radius: 10px;
       }
     }
   }
-
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    
+    @media @media700 {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -39,23 +76,59 @@
   }
 
   .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+    // width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    // padding: 0 22.5%;
+    width: 800px;
+    padding: 0 125px;
+    .DashBorder;
+    
+    @media @media800 {
+      // margin: 30px 5%;
+      width: 90%;
+      padding: 0;
+    }
 
     img {
       border-radius: 10px;
+      margin-bottom: 30px;
+      width: 100%;
+      // min-width: 600px;
     }
   }
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    .SectionWidth;
     display: flex;
     justify-content: space-between;
+    padding-top: 30px;
+    margin: 0 auto;
+    @media @media700 {
+      flex-direction: column;
+    }
 
     .destination {
       width: 30%;
+      // margin-left: 3%;
       margin-bottom: 30px;
+      padding-right: 4%;
+      @media @media700 {
+        padding: 0;
+        width: 100%;
+      }
     }
   }
-}// home
+  .btn, .btn:focus {
+    .CustomButton(45px, 15px, @button-bg, @white, 1.9rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    letter-spacing: 0;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px black;
+    cursor: pointer;
+  }
+} // home

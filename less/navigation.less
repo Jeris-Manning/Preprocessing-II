@@ -1,1 +1,30 @@
 // Navigation Styles here
+nav {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .DashBorder;
+  .PaddingLR;
+
+  @media @media700 {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100% * (380/800);
+    min-width: 200px;
+    @media @media700 {
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    a {
+      color: @font-color;
+      font-size: 1.7rem;
+      letter-spacing: -0.1rem;
+    }
+  }
+}
